@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./sections/Footer";
 import Navbar from "./components/Navbar";
 import Hero from "./pages/Hero";
-// import Services from "./pages/Services";
+import Services from "./pages/Services";
 import Rewards from "./pages/Rewards";
 
 export default function App() {
@@ -12,7 +12,7 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Hero />} />
-          {/* <Route path="/services" element={<Services />} />*/}
+          <Route path="/services" element={<Services />} />
           <Route path="/rewards" element={<Rewards />} />
         </Routes>
 
