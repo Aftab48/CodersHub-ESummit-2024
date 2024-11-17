@@ -1,6 +1,7 @@
+import React from "react";
+import CardComponent from "@/sections/CardComponent";
 import Forest from "@/components/Forest";
 import CarbonFootprint from "@/sections/CarbonFootprint";
-import CardComponent from "@/sections/CardComponent";
 import HeroSection from "@/sections/HeroSection";
 
 const Hero: React.FC = () => {

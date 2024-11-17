@@ -1,3 +1,4 @@
+import React from "react";
 import RewardCard from "@/components/RewardCard";
 
 const Rewards: React.FC = () => {

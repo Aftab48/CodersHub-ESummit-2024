@@ -67,7 +67,7 @@ const CarbonCalculator: React.FC<CalculatorProps> = ({ onCalculate }) => {
       newspaperFootprint +
       aluminumFootprint;
 
-    const totalFootprintPounds = (totalFootprintCO2e * 2.20462) / 100;
+    const totalFootprintPounds = totalFootprintCO2e * 2.20462;
 
     onCalculate(totalFootprintCO2e, totalFootprintPounds);
   };
