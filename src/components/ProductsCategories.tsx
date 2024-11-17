@@ -10,47 +10,255 @@ type Product = {
   brand: string;
   model: string;
   category: string;
+  subcategory: string;
   footprint: number;
+  price: string;
 };
 
 const products: Product[] = [
   {
     id: "1",
-    name: "Laptop",
-    brand: "Brand A",
-    model: "Model X",
+    name: "SleekBook",
+    brand: "Axon",
+    model: "14",
     category: "Consumer Electronics",
-    footprint: 50,
+    subcategory: "Laptops",
+    footprint: 70,
+    price: "MRP - ₹60,000",
   },
   {
     id: "2",
-    name: "Laptop",
-    brand: "Brand B",
-    model: "Model Y",
+    name: "Traveler",
+    brand: "ZenCore",
+    model: "14x",
     category: "Consumer Electronics",
+    subcategory: "Laptops",
     footprint: 80,
+    price: "MRP - ₹65,000",
   },
-  // ... other products
+  {
+    id: "3",
+    name: "AeroPad",
+    brand: "Nimbus",
+    model: "Duo",
+    category: "Consumer Electronics",
+    subcategory: "Laptops",
+    footprint: 70,
+    price: "MRP - ₹55,000",
+  },
+  {
+    id: "4",
+    name: "Prism",
+    brand: "Spectra",
+    model: "V20",
+    category: "Consumer Electronics",
+    subcategory: "Smartphones",
+    footprint: 70,
+    price: "MRP - ₹20,000",
+  },
+  {
+    id: "5",
+    name: "Vortex",
+    brand: "Nova",
+    model: "Max",
+    category: "Consumer Electronics",
+    subcategory: "Smartphones",
+    footprint: 70,
+    price: "MRP - ₹25,000",
+  },
+  {
+    id: "6",
+    name: "Prime",
+    brand: "Nanophone",
+    model: "27",
+    category: "Consumer Electronics",
+    subcategory: "Smartphones",
+    footprint: 70,
+    price: "MRP - ₹26,000",
+  },
+  {
+    id: "7",
+    name: "Bliss",
+    brand: "Oat",
+    model: "Harvest",
+    category: "Groceries",
+    subcategory: "Breakfast Cereals",
+    footprint: 70,
+    price: "MRP - ₹60 / 100g",
+  },
+  {
+    id: "8",
+    name: "Munch",
+    brand: "Morning",
+    model: "Swirls",
+    category: "Groceries",
+    subcategory: "Breakfast Cereals",
+    footprint: 70,
+    price: "MRP - ₹80 / 100g",
+  },
+  {
+    id: "9",
+    name: "Berry",
+    brand: "NutriNibbles",
+    model: "Oat",
+    category: "Groceries",
+    subcategory: "Breakfast Cereals",
+    footprint: 70,
+    price: "MRP - ₹70 / 120g",
+  },
+  {
+    id: "10",
+    name: "Fresh",
+    brand: "Dairy",
+    model: "Mozzarella",
+    category: "Groceries",
+    subcategory: "Dairy Products",
+    footprint: 70,
+    price: "MRP - ₹29 / pack",
+  },
+  {
+    id: "11",
+    name: "Barn",
+    brand: "Blue",
+    model: "Cream",
+    category: "Groceries",
+    subcategory: "Dairy Products",
+    footprint: 70,
+    price: "MRP - ₹45 / pack",
+  },
+  {
+    id: "12",
+    name: "Fresh",
+    brand: "CreamCo",
+    model: "Milk",
+    category: "Groceries",
+    subcategory: "Dairy Products",
+    footprint: 70,
+    price: "MRP - ₹55 / pack",
+  },
 ];
 
 const recommendationList: Product[] = [
   {
-    id: "3",
-    name: "Laptop",
-    brand: "Brand X",
-    model: "Model A1",
+    id: "1",
+    name: "Horizon",
+    brand: "Nimbus",
+    model: "Z14",
     category: "Consumer Electronics",
+    subcategory: "Laptops",
     footprint: 30,
+    price: "MRP - ₹40,000",
+  },
+  {
+    id: "2",
+    name: "Infinity Flex",
+    brand: "Axon",
+    model: "13",
+    category: "Consumer Electronics",
+    subcategory: "Laptops",
+    footprint: 30,
+    price: "MRP - ₹55,000",
+  },
+  {
+    id: "3",
+    name: "Streamer",
+    brand: "Volt",
+    model: "X20",
+    category: "Consumer Electronics",
+    subcategory: "Laptops",
+    footprint: 40,
+    price: "MRP - ₹45,000",
   },
   {
     id: "4",
-    name: "Laptop",
-    brand: "Brand Y",
-    model: "Model B2",
+    name: "Pulse",
+    brand: "Vortex",
+    model: "S9",
     category: "Consumer Electronics",
-    footprint: 55,
+    subcategory: "Smartphones",
+    footprint: 35,
+    price: "MRP - ₹30,000",
   },
-  // ... other recommendations
+  {
+    id: "5",
+    name: "UltraMax",
+    brand: "PulseTech",
+    model: "10",
+    category: "Consumer Electronics",
+    subcategory: "Smartphones",
+    footprint: 30,
+    price: "MRP - ₹24,500",
+  },
+  {
+    id: "6",
+    name: "Zenix",
+    brand: "Spectra",
+    model: "X10",
+    category: "Consumer Electronics",
+    subcategory: "Smartphones",
+    footprint: 30,
+    price: "MRP - ₹20,000",
+  },
+  {
+    id: "7",
+    name: "Grains",
+    brand: "Vita",
+    model: "Ancient",
+    category: "Groceries",
+    subcategory: "Breakfast Cereals",
+    footprint: 20,
+    price: "MRP - ₹65 / 100g",
+  },
+  {
+    id: "8",
+    name: "Fruit",
+    brand: "SunnyOats",
+    model: "Pop",
+    category: "Groceries",
+    subcategory: "Breakfast Cereals",
+    footprint: 20,
+    price: "MRP - ₹60 / 120g",
+  },
+  {
+    id: "9",
+    name: "Honey",
+    brand: "Zest",
+    model: "Bites",
+    category: "Groceries",
+    subcategory: "Breakfast Cereals",
+    footprint: 30,
+    price: "MRP - ₹55 / 100g",
+  },
+  {
+    id: "10",
+    name: "Almond",
+    brand: "Alpine",
+    model: "Milk",
+    category: "Groceries",
+    subcategory: "Dairy Products",
+    footprint: 30,
+    price: "MRP - ₹50 / pack",
+  },
+  {
+    id: "11",
+    name: "Greek",
+    brand: "PureMoo",
+    model: "Yogurt",
+    category: "Groceries",
+    subcategory: "Dairy Products",
+    footprint: 25,
+    price: "MRP - ₹28 / pack",
+  },
+  {
+    id: "12",
+    name: "Artisan",
+    brand: "Velveta",
+    model: "Yogurt",
+    category: "Groceries",
+    subcategory: "Dairy Products",
+    footprint: 20,
+    price: "MRP - ₹32 / pack",
+  },
 ];
 
 type Category = {
@@ -58,6 +266,7 @@ type Category = {
   subcategories: string[];
   icons: string;
   description: string;
+  subcatIcon: string[];
 };
 
 const ProductCategories = () => {
@@ -67,12 +276,26 @@ const ProductCategories = () => {
       subcategories: ["Laptops", "Smartphones", "TVs", "Speakers", "Printers"],
       icons: "/images/categories/electronic.png",
       description: "Laptops, Smartphones, TV and much more.....",
+      subcatIcon: [
+        "/images/subcats/laptops.png",
+        "/images/subcats/printers.png",
+        "/images/subcats/smartphones.png",
+        "/images/subcats/speakers.png",
+        "/images/subcats/tv.png",
+      ],
     },
     {
       name: "Furniture",
       subcategories: ["Tables", "Sofas", "Wardrobes", "Chairs", "Beds"],
       icons: "/images/categories/furniture.png",
       description: "Tables, Wardrobes, Sofas and much more......",
+      subcatIcon: [
+        "/images/subcats/table.png",
+        "/images/subcats/sofa.png",
+        "/images/subcats/wardrobe.png",
+        "/images/subcats/chairs.png",
+        "/images/subcats/beds.png",
+      ],
     },
     {
       name: "Groceries",
@@ -85,12 +308,26 @@ const ProductCategories = () => {
       ],
       icons: "/images/categories/groceries.png",
       description: "Food Items, Health Drinks and much more.....",
+      subcatIcon: [
+        "/images/subcats/cereal.png",
+        "/images/subcats/dairy.png",
+        "/images/subcats/bread.png",
+        "/images/subcats/condiments.png",
+        "/images/subcats/snacks.png",
+      ],
     },
     {
       name: "Fashion and Apparels",
       subcategories: ["Bags", "Shoes", "Trousers", "Tshirts", "Accessories"],
       icons: "/images/categories/fashion.png",
       description: "Menswear, Bags, Shoes and much more......",
+      subcatIcon: [
+        "/images/subcats/bags.png",
+        "/images/subcats/shoes.png",
+        "/images/subcats/trousers.png",
+        "/images/subcats/tshirts.png",
+        "/images/subcats/accessories.png",
+      ],
     },
     {
       name: "Household Essentials",
@@ -103,6 +340,13 @@ const ProductCategories = () => {
       ],
       icons: "/images/categories/household.png",
       description: "Toiletries, Draperies, Cleaners and much more......",
+      subcatIcon: [
+        "/images/subcats/refigerator.png",
+        "/images/subcats/microwave.png",
+        "/images/subcats/wm.png",
+        "/images/subcats/cutlery.png",
+        "/images/subcats/toiletries.png",
+      ],
     },
   ];
 
@@ -118,9 +362,13 @@ const ProductCategories = () => {
 
   const filterProductsByCategoryAndSubcategory = (
     productList: Product[],
-    category: string
+    category: string,
+    subcategory: string
   ): Product[] => {
-    return productList.filter((product) => product.category === category);
+    return productList.filter(
+      (product) =>
+        product.category === category && product.subcategory === subcategory
+    );
   };
 
   const handleCategoryClick = (category: Category) => {
@@ -167,7 +415,12 @@ const ProductCategories = () => {
   const handleAddProduct = (product: Product) => {
     if (!isProductAdded(product.id)) {
       setAddedProductsList((prev) => [...prev, product]);
+    } else if (!isProductRecommended(product.id)) {
+      setRecommendedProducts((prev) => [...prev, product]);
     }
+  };
+
+  const handleAddRecommendedProduct = (product: Product) => {
     if (!isProductRecommended(product.id)) {
       setRecommendedProducts((prev) => [...prev, product]);
     }
@@ -187,7 +440,11 @@ const ProductCategories = () => {
 
   const filteredProducts =
     selectedCategory && selectedSubcategory
-      ? filterProductsByCategoryAndSubcategory(products, selectedCategory.name)
+      ? filterProductsByCategoryAndSubcategory(
+          products,
+          selectedCategory.name,
+          selectedSubcategory
+        )
       : [];
 
   const totalAddedFootprint = calculateTotalFootprint(addedProductsList);
@@ -201,12 +458,6 @@ const ProductCategories = () => {
       <div className="flex flex-col w-full">
         <div className="flex flex-row w-full gap-x-20 mx-8">
           <div className="bg-[#D6ECEF] rounded-xl flex flex-col p-4 mb-2 w-full lg:w-[50%] box-border">
-            <div className="p-4 mb-4">
-              <h2 className="text-2xl font-bold text-gray-800 mb-3">
-                CATEGORIES
-              </h2>
-            </div>
-
             {selectedCategory ? (
               <div>
                 <div
@@ -215,20 +466,21 @@ const ProductCategories = () => {
                 >
                   <ArrowLeftIcon />
                 </div>
-                <h3 className="text-xl font-bold mb-3">
-                  {selectedCategory.name}
+                <h3 className="text-xl font-bold ml-6 mb-3">
+                  CATEGORIES {">"} {selectedCategory.name}
                 </h3>
 
                 {!showProducts ? (
-                  <div className="flex flex-col gap-y-20">
+                  <div className="flex flex-col gap-y-10">
                     {selectedCategory.subcategories.map(
                       (subcategory, index) => (
                         <div
                           key={index}
-                          className="flex items-center border border-gray-300 h-20 rounded-md p-3 bg-gray-100 hover:bg-gray-200 cursor-pointer transition-transform transform hover:translate-y-[-3px]"
+                          className="flex flex-row items-center gap-x-12 border border-gray-300 h-32 drop-shadow-sm rounded-2xl mx-16 p-3 bg-gray-100 hover:bg-gray-200 cursor-pointer transition-transform transform hover:translate-y-[-3px]"
                           onClick={() => handleSubcategoryClick(subcategory)}
                         >
-                          <span className="text-lg text-gray-800">
+                          <img src={selectedCategory.subcatIcon[index]} />
+                          <span className="text-xl text-center text-gray-800">
                             {subcategory}
                           </span>
                         </div>
@@ -248,16 +500,16 @@ const ProductCategories = () => {
                             key={product.id}
                             className="flex justify-between items-center border border-gray-300 rounded-md p-3 mb-2 bg-gray-100 hover:bg-green-50 transition-colors"
                           >
-                            <div className="flex-1">
-                              <span className="block text-lg font-semibold">
-                                {product.name}
-                              </span>
-                              <span className="block text-sm">
-                                {product.brand}
-                              </span>
-                              <span className="block text-sm">
-                                {product.model}
-                              </span>
+                            <div className="flex text-center justify-center items-center flex-row">
+                              <img src="/images/products/sample-img.png" />
+                              <div className="flex-1 ml-12">
+                                <span className="block text-lg font-semibold">
+                                  {product.brand} {product.name} {product.model}
+                                </span>
+                                <span className="block text-sm text-gray-600">
+                                  {product.price}
+                                </span>
+                              </div>
                             </div>
                             <button
                               className={`${
@@ -283,6 +535,11 @@ const ProductCategories = () => {
               </div>
             ) : (
               <div className="flex flex-col gap-y-6 w-full">
+                <div className="p-4 mb-4">
+                  <h3 className="text-2xl font-bold text-gray-800 mb-3">
+                    CATEGORIES
+                  </h3>
+                </div>
                 {categories.map((category, index) => (
                   <div
                     key={index}
@@ -353,7 +610,7 @@ const ProductCategories = () => {
                           </div>
                           <button
                             className="bg-green-600 text-white rounded-md px-2 py-1 text-sm hover:bg-green-700"
-                            onClick={() => handleAddProduct(rec)}
+                            onClick={() => handleAddRecommendedProduct(rec)}
                             disabled={isProductAdded(rec.id)}
                           >
                             {isProductAdded(rec.id) ? "✓" : "+"}
@@ -377,9 +634,16 @@ const ProductCategories = () => {
                   key={index}
                   className="flex items-center justify-between border border-gray-300 rounded-md p-3 bg-gray-100 mb-3"
                 >
-                  <span>
-                    {product.brand} {product.model}
-                  </span>
+                  <div className="flex flex-col">
+                    <span>
+                      {product.brand} {product.name} {product.model}
+                    </span>
+                    <span>{product.price}</span>
+                    <span className="text-blue-800 cursor-pointer underline">
+                      Buy Now
+                    </span>
+                  </div>
+
                   <button
                     className="bg-red-500 text-white rounded-md px-3 py-1 hover:bg-red-600"
                     onClick={() => handleRemoveRecommendedProduct(index)}
